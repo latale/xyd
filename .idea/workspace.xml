@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="520ba877-6120-40c1-8dc2-e1f0d6a1eea0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/index.html" />
-    </list>
+    <list default="true" id="520ba877-6120-40c1-8dc2-e1f0d6a1eea0" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -62,8 +59,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="522" />
-    <option name="y" value="186" />
+    <option name="x" value="-285" />
+    <option name="y" value="377" />
     <option name="width" value="1932" />
     <option name="height" value="1056" />
   </component>
@@ -192,15 +189,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1500862180182</updated>
-      <workItem from="1500862181789" duration="69000" />
+      <workItem from="1500862181789" duration="384000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69000" />
+    <option name="totallyTimeSpent" value="384000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="522" y="186" width="1932" height="1056" extended-state="0" />
+    <frame x="-285" y="377" width="1932" height="1056" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2497332" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
