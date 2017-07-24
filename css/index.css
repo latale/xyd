@@ -52,6 +52,7 @@ body {
 }
 .m-xyd-conditions-area {
   background: #ffffff;
+  padding-bottom: 2rem;
 }
 .m-xyd-conditions-area .m-condition-1 {
   padding-left: 0.33333333rem;
@@ -68,6 +69,9 @@ body {
 }
 .m-xyd-conditions-area .m-condition-article {
   display: none;
+}
+.m-xyd-conditions-area .m-condition-warning li {
+  margin-bottom: 0.13333333rem;
 }
 .m-xyd-conditions-area .m-condition-1.active .m-condition-article {
   display: block;
@@ -126,4 +130,36 @@ body {
 .process-3::after {
   height: 0;
   width: 0;
+}
+.m-support-citys {
+  display: flex;
+  align-items: center;
+  margin-top: 0.26666667rem;
+}
+.m-support-citys .support-citys-profix {
+  flex: 1;
+}
+.m-support-citys .support-citys-info {
+  flex: 8;
+  font-size: 0.29333333rem;
+}
+.m-index-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  background: #ffffff;
+}
+.m-index-footer .m-apply-btn {
+  background: #f37937;
+  color: #FFF;
+  display: block;
+  text-align: center;
+  width: 80%;
+  height: 1.06666667rem;
+  margin: 0 auto;
+  line-height: 1.06666667rem;
+  border-radius: 1.06666667rem;
 }

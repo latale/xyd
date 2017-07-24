@@ -99,6 +99,7 @@ body{
 }
 .m-xyd-conditions-area{
   .bg(#FFF);
+  .pr(pb,150);
   .m-condition-1{
     .pr(pl,25);
     .pr(pr,25);
@@ -114,6 +115,11 @@ body{
   }
   .m-condition-article{
     display: none;
+  }
+  .m-condition-warning{
+    li{
+      .mr(mb,10);
+    }
   }
   .m-condition-1{
     &.active{
@@ -178,4 +184,38 @@ body{
 .process-3::after{
   height:0;
   width:0;
+}
+.m-support-citys{
+  display: flex;
+  align-items: center;
+  .mr(mt,20);
+  .support-citys-profix{
+    flex:1;
+  }
+  .support-citys-info{
+    flex:8;
+    .fz(22);
+  }
+}
+.m-index-footer{
+  //.mr(mt,50);
+  //.rem(h,50);
+  position: fixed;
+  bottom:0;
+  left:0;
+  width:100%;
+  .pr(pt,30);
+  .pr(pb,30);
+  .bg(#FFF);
+  .m-apply-btn{
+    background:#f37937;
+    color:#FFF;
+    display: block;
+    text-align: center;
+    width:80%;
+    .rem(h,80);
+    margin:0 auto;
+    line-height:80/75rem;
+    border-radius: 80/75rem;
+  }
 }
