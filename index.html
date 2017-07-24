@@ -3,8 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <title>xyd</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/flexible.js"></script>
+    <script src="js/index/index.js"></script>
 </head>
 <body>
-
+    <div class="m-xyd-wrapper">
+        <div class="m-xyd-banner">
+            <img src="images/logo.png">
+        </div>
+        <div class="m-xyd-special">
+            <ul>
+                <li class="m-special-one">
+                    <div class="m-special-img">
+                        <img src="images/page-1.png">
+                    </div>
+                    <div class="m-special-content">
+                        <p>放款快</p>
+                        <p>在线申请,快至一天放款</p>
+                    </div>
+                </li>
+                <li class="m-special-one">
+                    <div class="m-special-img">
+                        <img src="images/page-2.png">
+                    </div>
+                    <div class="m-special-content">
+                        <p>利率低</p>
+                        <p>月利率低至1.1%</p>
+                    </div>
+                </li>
+                <li class="m-special-one">
+                    <div class="m-special-img">
+                        <img src="images/page-3.png">
+                    </div>
+                    <div class="m-special-content">
+                        <p>还款灵活</p>
+                        <p>可分12/24/36/48个月还款</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <section class="m-xyd-conditions-area">
+            <div class="m-condition-1">
+                <div class="m-condition-title">
+                    <p>申请条件</p>
+                </div>
+                <article class="m-condition-article">
+                    <ul>
+                        <li>1.具有完全民事行为能力的中国公民，并持有二代身份证</li>
+                        <li>2.年龄25周岁（含）～55周岁（含）</li>
+                        <li>3.月平均收入4000元及以上（一线城市不低于5000元）</li>
+                        <li>4.平安银行要求的其它条件</li>
+                    </ul>
+                </article>
+            </div>
+            <div class="m-condition-1">
+                <div class="m-condition-title">
+                    <p>申请流程</p>
+                </div>
+                <article class="m-condition-article">
+                    <div class="m-condition-process process-1">
+                        <p>提交资料</p>
+                        <p>提交贷款资料</p>
+                    </div>
+                    <div class="m-condition-process process-2">
+                        <p>核实审批</p>
+                        <p>资料核实，银行审批</p>
+                    </div>
+                    <div class="m-condition-process process-3">
+                        <p>签订合同</p>
+                        <p>签订合同后贷款即可到账</p>
+                    </div>
+                </article>
+            </div>
+            <div class="m-condition-1">
+                <div class="m-condition-title">
+                    <p>支持的城市</p>
+                </div>
+                <!--<div></div>-->
+            </div>
+        </section>
+    </div>
 </body>
+<script>
+    new Show($('.m-condition-title'),$('.m-condition-article'));
+</script>
 </html>

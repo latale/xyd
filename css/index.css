@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  font-family: Tahoma,Arial,Helvetica,Microsoft YaHei;
+  background: #f8f8f8;
+}
+.m-container {
+  width: 100%;
+}
+.m-xyd-banner {
+  height: 4.10666667rem;
+}
+.m-xyd-banner img {
+  width: 100%;
+  height: 100%;
+  font-size: 0rem;
+}
+.m-xyd-special {
+  background: #ffffff;
+}
+.m-special-one {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #d9d9d9;
+  margin-left: 0.29333333rem;
+  margin-right: 0.29333333rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  padding-left: 0.46666667rem;
+  padding-right: 0.46666667rem;
+}
+.m-special-one .m-special-img {
+  width: 1.06666667rem;
+  height: 0.93333333rem;
+}
+.m-special-one .m-special-img img {
+  width: 100%;
+  height: 100%;
+}
+.m-special-content {
+  margin-left: 0.4rem;
+}
+.m-special-content p:nth-child(1) {
+  font-size: 0.46666667rem;
+}
+.m-special-content p:nth-child(2) {
+  color: #63666b;
+}
+.m-xyd-conditions-area {
+  background: #ffffff;
+}
+.m-xyd-conditions-area .m-condition-1 {
+  padding-left: 0.33333333rem;
+  padding-right: 0.33333333rem;
+}
+.m-xyd-conditions-area .m-condition-title {
+  height: 1.24rem;
+  display: flex;
+  align-items: center;
+  font-size: 0.4rem;
+  border-bottom: 0.01333rem solid #d9d9d9;
+  background: url("../images/off.png") no-repeat 94% 50%;
+  background-size: 0.16rem 0.09333333rem;
+}
+.m-xyd-conditions-area .m-condition-article {
+  display: none;
+}
+.m-xyd-conditions-area .m-condition-1.active .m-condition-article {
+  display: block;
+  padding-top: 0.26666667rem;
+  padding-bottom: 0.26666667rem;
+  border-bottom: 0.001333rem solid #d9d9d9;
+}
+.m-xyd-conditions-area .m-condition-1.active .m-condition-title {
+  background: url("../images/on.png") no-repeat 94% 50%;
+  background-size: 0.16rem 0.09333333rem;
+}
+.m-xyd-conditions-area .m-condition-1 .m-condition-process {
+  position: relative;
+  padding-left: 0.66666667rem;
+  padding-bottom: 0.4rem;
+}
+.m-xyd-conditions-area .m-condition-1 .m-condition-process p {
+  font-size: 0.32rem;
+  line-height: .5rem;
+}
+.m-xyd-conditions-area .m-condition-1 .m-condition-process p:nth-child(2) {
+  color: #6c7684;
+}
+.m-condition-process::before {
+  content: '1';
+  position: absolute;
+  width: 0.4rem;
+  height: 0.4rem;
+  border: 0.01333rem solid #d9d9d9;
+  border-radius: 50%;
+  color: #b3b2b2;
+  background: #FFF;
+  text-align: center;
+  margin-right: 4%;
+  left: .1rem;
+  z-index: 1;
+}
+.process-1::before {
+  content: '1';
+}
+.process-2::before {
+  content: '2';
+}
+.m-condition-process::after {
+  content: '';
+  width: 0.03333333rem;
+  height: 80%;
+  position: absolute;
+  left: .3rem;
+  top: 0.36rem;
+  background: #b3b2b2;
+}
+.process-3::before {
+  content: '3';
+}
+.process-3::after {
+  height: 0;
+  width: 0;
+}
