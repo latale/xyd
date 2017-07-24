@@ -1,0 +1,105 @@
+.mx-wrapper{
+	width: 10rem;
+	min-height: 100vh;
+	font-size: 28/75rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+    background-color: #FFF;
+}
+
+.mx-head{
+    width: 10rem;
+	height: 90/75rem;
+	font-size: 32/75rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    position: relative;
+}
+.mx-back{
+    height: 90/75rem;
+    position: absolute;
+    left: .5rem;
+    color: #333;
+    top: 0;
+    display: flex;
+    align-items: center;
+}
+
+.mx-canvas{
+    position: relative;
+}
+#myChart,#myChart2{
+    width: 350/75rem !important;
+    height: 350/75rem !important;
+}
+#myChart{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.mx-canvas-text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 32/75rem;
+}
+.mx-canvas-num{
+    font-size: 50/75rem;
+}
+
+.mx-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 32/75rem;
+    .mx-ipt{
+        width: 8rem;
+        height: 100/75rem;
+        border-bottom: 1px solid #ddd;
+        display: flex;
+        align-items: center;
+        margin-bottom: 30/75rem;
+        &>input{
+            flex: 1;
+            height: 98/75rem;
+            outline: none;
+            border: 0;
+            font-size: 32/75rem;
+        }
+    }
+    .mx-lab{
+        width: 2rem;
+        text-align: left;
+    }
+    .mx-sub{
+        width: 8rem;
+        height: 100/75rem;
+        font-size: 32/75rem;
+        border: 1px solid #ff831a;
+        border-radius: 50/75rem;
+        background-color: transparent;
+        color: #ff831a;
+    }
+}
+
+.mx-tip{
+	display: flex;
+	flex-direction: column;
+    align-items: center;
+    color: #999;
+    padding: 12/75rem 0;
+    .mx-back2{
+        font-size: 34/75rem;
+        color: #333;
+        margin-top: 12/75rem;
+    }
+}
