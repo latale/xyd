@@ -237,6 +237,7 @@ body{
   .fz(24);
 }
 .m-share{
+  display: none;
   background:rgba(0,0,0,0.6);
   position: fixed;
   width:100%;
@@ -320,7 +321,7 @@ body{
   background-size:2rem;
 }
 .m-share-btn:nth-child(2) a::before{
-  background-position: 0 -150px;
+  background-position: 0 -2rem;
 }
 .m-share-close{
   transform: scale(1.5);
@@ -328,10 +329,26 @@ body{
 }
 
 .m-share-start{
-  .rem(w,70);
-  .rem(h,70);
+  .rem(w,80);
+  .rem(h,80);
   background:url("../images/share.png") no-repeat;
+  background-size:100% 100%;
   position: fixed;
   right:.5rem;
   bottom:3rem;
+}
+.m-wx-shadow{
+  width:100%;
+  height:100%;
+  position: fixed;
+  left:0;
+  top:0;
+  background:rgba(0,0,0,0.8);
+  z-index: 999;
+  display: none;
+  img{
+    position: relative;
+    left:2rem;
+    width:8rem;
+  }
 }
