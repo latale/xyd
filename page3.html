@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>xyd</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/page.css">
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/flexible.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js" />
+    <script src="js/index/index.js"></script>
+</head>
+<body>
+    <div class="mx-wrapper">
+        <div class="mx-head">
+            <a class="mx-back" href="javascript:history.go(-1)"><返回</a>
+            <div class="mx-title">测测能贷多少</div>
+        </div>
+        <div class="mx-canvas">
+            <canvas id="myChart" width="350" height="350"></canvas>
+            <canvas id="myChart2" width="350" height="350"></canvas>
+            <div class="mx-canvas-text">
+                <div class="mx-can-lab">我的额度</div>
+                <div class="mx-canvas-num">200,000</div>
+            </div>
+        </div>
+        <div class="mx-form">
+            <div class="mx-ipt">
+                <label for="name" class="mx-lab">姓名</label>
+                <input id="name" type="text" name="name">
+            </div>
+            <div class="mx-ipt">
+                <label for="mobile" class="mx-lab">手机号</label>
+                <input id="mobile" type="text" name="mobile">
+            </div>
+            <button type="submit" class="mx-sub">申请</button>
+        </div>
+        <div class="mx-tip">
+            <span>额度不够？信息越多额度越高</span>
+            <a class="mx-back2" href="##">重新测</a>
+        </div>
+        <div class="mx-tip">
+            <span>以上估算仅供参考，</span>
+            <span>受个人征信等影响，请以最终审批额度为准</span>
+        </div>
+    </div>
+</body>
+<script>
+    $(function () {
+        var ctx = document.getElementById('myChart').getContext('2d')
+        var ctx2 = document.getElementById('myChart2').getContext('2d')
+        var data = {
+            datasets: [{
+                data: [20, 30],
+                backgroundColor: ['#ff831a', 'transparent'],
+                borderColor: 'transparent'
+            }]
+        }
+        var data2 = {
+            datasets: [{
+                data: [50],
+            }]
+        }
+        var options = {
+            cutoutPercentage: 80,
+        }
+        var options2 = {
+            cutoutPercentage: 80,
+            animation: {
+                animateRotate: false
+            }
+        }
+        var myDoughnutChart = new Chart(ctx, {
+            type: 'doughnut',
+            data: data,
+            options: options
+        });
+        var myDoughnutChart2 = new Chart(ctx2, {
+            type: 'doughnut',
+            data: data2,
+            options: options2
+        });
+    })
+</script>
+</html>
