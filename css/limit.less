@@ -128,18 +128,24 @@ input{
     input{
       .fz(30);
       .rem(w,160);
+      .rem(h,110);
     }
-    &.pledge-all{
-      height:auto;
       .m-limit-item-right{
+        position: relative;
+        &.pledge-all{
         input{
-          display: block;
-          width:3.5rem;
+          .rem(w,220);
           padding:.1rem 0;
         }
       }
     }
   }
+}
+.m-limit-position{
+  position: absolute;
+  right:0;
+  top:50%;
+  transform: translate(0,-50%);
 }
 .m-limit-footer{
   position: fixed;

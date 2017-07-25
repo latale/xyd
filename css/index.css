@@ -20,7 +20,7 @@ body {
   font-size: 0rem;
 }
 .m-xyd-special {
-  background: #FFF;
+  background: #ffffff;
 }
 .m-special-one {
   display: flex;
@@ -51,7 +51,7 @@ body {
   color: #63666b;
 }
 .m-xyd-conditions-area {
-  background: #FFF;
+  background: #ffffff;
   padding-bottom: 2rem;
 }
 .m-xyd-conditions-area .m-condition-1 {
@@ -60,6 +60,7 @@ body {
 }
 .m-xyd-conditions-area .m-condition-title {
   height: 1.24rem;
+  line-height: 1.24rem;
   display: flex;
   align-items: center;
   font-size: 0.4rem;
@@ -72,6 +73,7 @@ body {
 }
 .m-xyd-conditions-area .m-condition-warning li {
   margin-bottom: 0.13333333rem;
+  font-size: 0.32rem;
 }
 .m-xyd-conditions-area .m-condition-1.active .m-condition-article {
   display: block;
@@ -94,6 +96,13 @@ body {
 }
 .m-xyd-conditions-area .m-condition-1 .m-condition-process p:nth-child(2) {
   color: #6c7684;
+}
+.m-xyd-conditions-area .m-condition-title a {
+  text-decoration: none;
+  color: #000;
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 .m-condition-process::before {
   content: '1';
@@ -150,7 +159,7 @@ body {
   width: 100%;
   padding-top: 0.4rem;
   padding-bottom: 0.4rem;
-  background: #FFF;
+  background: #ffffff;
 }
 .m-index-footer .m-apply-btn {
   background: #f37937;

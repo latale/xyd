@@ -41,7 +41,7 @@
                             <p>您的心理预期额度</p>
                         </div>
                         <div class="m-limit-item-right">
-                            <input type="text" value="" placeholder="请输入整数" validate="number"><span>元</span>
+                            <input type="text" value="" placeholder="请输入整数" validate="number" required><span>元</span>
                         </div>
                     </div>
                    <div class="error-block">
@@ -57,7 +57,7 @@
                             <p>房贷月供</p>
                         </div>
                         <div class="m-limit-item-right">
-                            <input type="text" value="" placeholder="请输入整数" validate="number"><span>元</span>
+                            <input type="text" value="" placeholder="请输入整数" validate="number" required><span>元</span>
                         </div>
                     </div>
                     <div class="error-block">
@@ -74,7 +74,7 @@
                             <p>个人+工资</p>
                         </div>
                         <div class="m-limit-item-right">
-                            <input type="text" value="" placeholder="请输入整数" validate="number"><span>元</span>
+                            <input type="text" value="" placeholder="请输入整数" validate="number" required><span>元</span>
                         </div>
                     </div>
                     <div class="error-block">
@@ -90,7 +90,7 @@
                             <p>打卡工资(月工资)</p>
                         </div>
                         <div class="m-limit-item-right">
-                            <input type="text" value="" placeholder="请输入整数" validate="number"><span>元</span>
+                            <input type="text" value="" placeholder="请输入整数" validate="number" required><span>元</span>
                         </div>
                         <div class="error-block">
                             <p></p>
@@ -106,7 +106,7 @@
                             <p>保费</p>
                         </div>
                         <div class="m-limit-item-right">
-                            <input type="text" value="" placeholder="请输入整数" validate="number"><span>元</span>
+                            <input type="text" value="" placeholder="请输入整数" validate="number" required><span>元</span>
                         </div>
                         <div class="error-block">
                             <p></p>
@@ -122,7 +122,7 @@
                             <p>车贷</p>
                         </div>
                         <div class="m-limit-item-right">
-                            <input type="text" value="" placeholder="请输入整数" validate="number"><span>元</span>
+                            <input type="text" value="" placeholder="请输入整数" validate="number" required><span>元</span>
                         </div>
                         <div class="error-block">
                             <p></p>
@@ -131,19 +131,31 @@
                 </div>
                 <div class="m-limit-item">
                     <div class="m-limit-item-title">
-                        <p>抵押信息</p>
+                        <p>全款房抵押信息(利息4厘起)</p>
                     </div>
-                    <div class="m-limit-item-info pledge-all">
+                    <div class="m-limit-item-info">
                         <div class="m-limit-item-left">
-                            <p>全款房抵押(利息4厘起)</p>
+                            <p>小区名称</p>
                         </div>
-                        <div class="m-limit-item-right">
-                            <input type="text" value="" placeholder="请输入小区名称"  validate="required">
-                            <input type="text" value="" placeholder="请输入面积" validate="number">
-                            <input type="text" value="" placeholder="请输入市场价" validate="number">
+                        <div class="m-limit-item-right pledge-all">
+                            <input type="text" value="" placeholder="请输入小区名称"  validate="required" required>                                       </div>
+                    </div>
+                    <div class="m-limit-item-info">
+                        <div class="m-limit-item-left">
+                            <p>面积</p>
                         </div>
-                        <div class="error-block">
-                            <p></p>
+                        <div class="m-limit-item-right pledge-all">
+                            <input type="text" value="" placeholder="请输入面积"  validate="required" required>
+                            <span class="m-limit-position">m²</span>
+                        </div>
+                    </div>
+                    <div class="m-limit-item-info">
+                        <div class="m-limit-item-left">
+                            <p>市场价</p>
+                        </div>
+                        <div class="m-limit-item-right pledge-all">
+                            <input type="text" value="" placeholder="请输入市场价"  validate="required" required>
+                        <span class="m-limit-position">元</span>
                         </div>
                     </div>
                 </div>
@@ -154,9 +166,7 @@
         </form>
     </div>
     <script>
-        $(function() {
-            new LimitForm($('#form'));
-        })
+        new LimitForm($('#form'));
     </script>
 </body>
 </html>

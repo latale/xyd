@@ -10,8 +10,7 @@ class LimitForm{
     submit() {
         let self = this;
         $(this.form).submit(function() {
-            // console.log(1);
-            new Validate() ? self.ajaxSubmit(): false;
+            new Validate() ? self.ajaxSubmit() : false;
             return false;
         })
     }
@@ -20,8 +19,7 @@ class LimitForm{
     }
 
     goBack() {
-        $('.m-limit-title::before').click(() => {
-            console.log(1);
+        $('.m-limit-title::before').click(function () {
             window.history.go(-1);
         })
     }
@@ -44,18 +42,15 @@ class Validate{
     }
     validating() {
         let self = this;
-        let flag = false;
+        let flag = true;
         self.form.find('input').each(function(index,item) {
             let condition = $(item).attr('validate');
-            // console.log(condition);
             let val = $(item).val();
-            // console.log(val);
             if(!self.validateCondition(condition,val)) {
                 console.log(condition,val);
                     self.outputError($(this),self.getErrorConditionText(condition));
-                return false;
+                flag = false;
             }
-            flag = true;
         });
         return flag;
     }

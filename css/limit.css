@@ -79,14 +79,20 @@ input {
 .m-limit-item .m-limit-item-info input {
   font-size: 0.4rem;
   width: 2.13333333rem;
+  height: 1.46666667rem;
 }
-.m-limit-item .m-limit-item-info.pledge-all {
-  height: auto;
+.m-limit-item .m-limit-item-info .m-limit-item-right {
+  position: relative;
 }
-.m-limit-item .m-limit-item-info.pledge-all .m-limit-item-right input {
-  display: block;
-  width: 3.5rem;
+.m-limit-item .m-limit-item-info .m-limit-item-right.pledge-all input {
+  width: 2.93333333rem;
   padding: .1rem 0;
+}
+.m-limit-position {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
 }
 .m-limit-footer {
   position: fixed;
