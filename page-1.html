@@ -62,8 +62,8 @@
                 <div class="m-condition-title">
                     <a href="#process">申请流程</a>
                 </div>
-                <article id="process" class="m-condition-article">
-                    <div class="m-condition-process process-1">
+                <article style="font-size:.32rem" class="m-condition-article">
+                    <div class="m-condition-process">
                         <p>提交资料</p>
                         <p>提交贷款资料</p>
                     </div>
@@ -109,6 +109,29 @@
                 </article>
             </div>
         </section>
+        <a class="m-share-start"></a>
+        <div class="m-share">
+            <div class="m-share-box">
+                <div class="m-share-title">
+                    <span>分享给好友</span>
+                    <a  class="m-share-close" href="javascript:void(0)">x</a>
+                </div>
+                <div class="m-share-content">
+                    <div class="m-share-top">
+                        <p class="m-share-notice">输入手机号或者编码，做分享达人</p>
+                        <input class="m-share-tel" type="text" value="">
+                    </div>
+                    <ul class="m-share-bottom">
+                        <li class="m-share-btn">
+                            <a href="#">微信好友</a>
+                        </li>
+                        <li class="m-share-btn">
+                            <a href="#">微信朋友圈</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
         <div class="m-index-footer">
             <a href="./page-2.html" class="m-apply-btn">立即申请</a>
         </div>
@@ -116,5 +139,11 @@
 </body>
 <script>
     new Show($('.m-condition-title'),$('.m-condition-article'));
+    $('.m-share-start').click(() => {
+        $('.m-share').show();
+    })
+    $('.m-share-close').click(() => {
+        $('.m-share').hide();
+    })
 </script>
 </html>
