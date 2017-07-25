@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>limit</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/limit.css">
+    <script src="js/flexible.js"></script>
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/LimitForm.js"></script>
+</head>
+<body>
+    <div class="limit-wrapper">
+        <header class="m-limit-header">
+            <div class="m-limit-back"></div>
+            <div class="m-limit-title">
+                <p>测测能贷多少</p>
+            </div>
+        </header>
+        <div class="m-limit-banner">
+            <div class="m-limit-radius">
+                <img src="images/small-circle.png">
+                <div class="m-limit-radius-text">
+                    <p>10秒</p>
+                    <p>测额度</p>
+                </div>
+            </div>
+            <div class="m-limit-suggest">
+                <p>信息越多，额度越高，请根据您的实际情况填写</p>
+            </div>
+        </div>
+        <form action="" method="post" id="form">
+            <div class="m-limit-item-area">
+                <div class="m-limit-item">
+                    <div class="m-limit-item-title">
+                        <p>额度信息</p>
+                    </div>
+                    <div class="m-limit-item-info">
+                        <div class="m-limit-item-left">
+                            <p>您的心理预期额度</p>
+                        </div>
+                        <div class="m-limit-item-right">
+                            <input type="text" value="" placeholder="请输入整数" validate="number"><span>元</span>
+                        </div>
+                    </div>
+                   <div class="error-block">
+                       <p></p>
+                   </div>
+                </div>
+                <div class="m-limit-item">
+                    <div class="m-limit-item-title">
+                        <p>房贷信息</p>
+                    </div>
+                    <div class="m-limit-item-info">
+                        <div class="m-limit-item-left">
+                            <p>房贷月供</p>
+                        </div>
+                        <div class="m-limit-item-right">
+                            <input type="text" value="" placeholder="请输入整数" validate="number"><span>元</span>
+                        </div>
+                    </div>
+                    <div class="error-block">
+                        <p></p>
+                    </div>
+                </div>
+                <div class="m-limit-item">
+                    <div class="m-limit-item-title">
+                        <p>公积金信息</p>
+                    </div>
+                    <div class="m-limit-item-info">
+                        <div class="m-limit-item-left">
+                            <p>公积金月缴金额</p>
+                            <p>个人+工资</p>
+                        </div>
+                        <div class="m-limit-item-right">
+                            <input type="text" value="" placeholder="请输入整数" validate="number"><span>元</span>
+                        </div>
+                    </div>
+                    <div class="error-block">
+                        <p></p>
+                    </div>
+                </div>
+                <div class="m-limit-item">
+                    <div class="m-limit-item-title">
+                        <p>工资信息</p>
+                    </div>
+                    <div class="m-limit-item-info">
+                        <div class="m-limit-item-left">
+                            <p>打卡工资(月工资)</p>
+                        </div>
+                        <div class="m-limit-item-right">
+                            <input type="text" value="" placeholder="请输入整数" validate="number"><span>元</span>
+                        </div>
+                        <div class="error-block">
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="m-limit-item">
+                    <div class="m-limit-item-title">
+                        <p>保费信息</p>
+                    </div>
+                    <div class="m-limit-item-info">
+                        <div class="m-limit-item-left">
+                            <p>保费</p>
+                        </div>
+                        <div class="m-limit-item-right">
+                            <input type="text" value="" placeholder="请输入整数" validate="number"><span>元</span>
+                        </div>
+                        <div class="error-block">
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="m-limit-item">
+                    <div class="m-limit-item-title">
+                        <p>车贷信息</p>
+                    </div>
+                    <div class="m-limit-item-info">
+                        <div class="m-limit-item-left">
+                            <p>车贷</p>
+                        </div>
+                        <div class="m-limit-item-right">
+                            <input type="text" value="" placeholder="请输入整数" validate="number"><span>元</span>
+                        </div>
+                        <div class="error-block">
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="m-limit-item">
+                    <div class="m-limit-item-title">
+                        <p>抵押信息</p>
+                    </div>
+                    <div class="m-limit-item-info pledge-all">
+                        <div class="m-limit-item-left">
+                            <p>全款房抵押(利息4厘起)</p>
+                        </div>
+                        <div class="m-limit-item-right">
+                            <input type="text" value="" placeholder="请输入小区名称"  validate="required">
+                            <input type="text" value="" placeholder="请输入面积" validate="number">
+                            <input type="text" value="" placeholder="请输入市场价" validate="number">
+                        </div>
+                        <div class="error-block">
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="m-limit-footer">
+                <input type="submit" value="测测额度">
+            </div>
+        </form>
+    </div>
+    <script>
+        $(function() {
+            new LimitForm($('#form'));
+        })
+    </script>
+</body>
+</html>
