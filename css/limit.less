@@ -50,29 +50,40 @@ input{
 }
 
 .m-limit-header{
+  position: relative;
+  z-index: 1;
   .rem(h,90);
   text-align: center;
   .bg(#FFF);
   line-height:90/75rem;
   .m-limit-title{
-    position: relative;
+    // position: relative;
     p{
       .fz(32);
     }
   }
+  a{
+    text-decoration: none;
+    color:#000;
+    .fz(30);
+    position: absolute;
+    left:.5rem;
+    top:50%;
+    transform: translate(0,-50%);
+  }
 }
-.m-limit-title::before{
-  content:'';
-  display: inline-block;
-  .rem(w,20rem);
-  .rem(h,20rem);
-  border-top:0.0533rem solid #ccc;
-  border-left:0.0533rem solid #ccc;
-  position: absolute;
-  left:.5rem;
-  top:50%;
-  transform: translate(0,-50%) rotate(-45deg);
-}
+// .m-limit-title::before{
+//   content:'';
+//   display: inline-block;
+//   .rem(w,20rem);
+//   .rem(h,20rem);
+//   border-top:0.0533rem solid #ccc;
+//   border-left:0.0533rem solid #ccc;
+//   position: absolute;
+//   left:.5rem;
+//   top:50%;
+//   transform: translate(0,-50%) rotate(-45deg);
+// }
 .m-limit-banner{
   padding:5%;
   text-align: center;

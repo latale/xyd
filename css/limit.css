@@ -3,28 +3,24 @@ input {
   outline: none;
 }
 .m-limit-header {
+  position: relative;
+  z-index: 1;
   height: 1.2rem;
   text-align: center;
   background: #ffffff;
   line-height: 1.2rem;
 }
-.m-limit-header .m-limit-title {
-  position: relative;
-}
 .m-limit-header .m-limit-title p {
   font-size: 0.42666667rem;
 }
-.m-limit-title::before {
-  content: '';
-  display: inline-block;
-  width: 0.26666667rem;
-  height: 0.26666667rem;
-  border-top: 0.0533rem solid #ccc;
-  border-left: 0.0533rem solid #ccc;
+.m-limit-header a {
+  text-decoration: none;
+  color: #000;
+  font-size: 0.4rem;
   position: absolute;
   left: .5rem;
   top: 50%;
-  transform: translate(0, -50%) rotate(-45deg);
+  transform: translate(0, -50%);
 }
 .m-limit-banner {
   padding: 5%;
